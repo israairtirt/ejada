@@ -675,6 +675,7 @@ html[lang="ar"] .quote { line-height: 1.6; }
   position: relative;
   display: grid;
   grid-template-columns: 56px 1fr;
+  align-content: start;
   gap: 4px 20px;
   padding-bottom: 32px;
 }
@@ -756,6 +757,9 @@ html[lang="ar"] .quote { line-height: 1.6; }
 }
 .value__title { font-weight: 600; color: var(--white); font-size: var(--fs-md); }
 .value__text { color: var(--on-dark-muted); font-size: var(--fs-sm); }
+.values--compact .value { align-items: center; padding-block: 12px; }
+.values--compact .value__num { grid-row: auto; }
+.prose + .vm { margin-top: 32px; }
 
 /* --------------------------------------------------------------------------
    Goals — oversized outline numerals
